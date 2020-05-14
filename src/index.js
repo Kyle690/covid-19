@@ -6,6 +6,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
+const keys = require('./config/urls');
 
 // import Routes
 const AllRoutes = require('./routes/all');
@@ -15,9 +16,7 @@ const DailyRoutes = require('./routes/daily');
 const app = express();
 
 // data base stuff
-const urlForLocal='mongodb://localhost/covid';
-const urlForOnline ='mongodb+srv://kyleDev:gefxit-wazcy1-ciPbod@cluster0-kni2l.mongodb.net/test?retryWrites=true&w=majority'
-mongoose.connect(urlForOnline,
+mongoose.connect(keys.urlForOnline,
     {
         useNewUrlParser:true,
         useCreateIndex:true,
