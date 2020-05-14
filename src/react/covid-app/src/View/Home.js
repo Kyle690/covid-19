@@ -99,7 +99,7 @@ const Home =({data})=>{
                                         {
                                             label:'Deaths',
                                             data:deaths,
-                                            backgroundColor:lightRed,
+                                            backgroundColor:red,
                                             borderColor:red ,
                                             borderWidth: 1,
 
@@ -107,7 +107,7 @@ const Home =({data})=>{
                                         {
                                             label:'Recoveries',
                                             data:recoveries,
-                                            backgroundColor:lightYellow,
+                                            backgroundColor:yellow,
                                             borderColor:yellow,
                                             borderWidth: 1,
 
@@ -115,7 +115,7 @@ const Home =({data})=>{
                                         {
                                             label:'Active',
                                             data:active,
-                                            backgroundColor:lightGreen,
+                                            backgroundColor:green,
                                             borderColor:green,
                                             borderWidth: 1,
 

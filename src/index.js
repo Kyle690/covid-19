@@ -17,7 +17,7 @@ const app = express();
 // data base stuff
 const urlForLocal='mongodb://localhost/covid';
 const urlForOnline ='mongodb+srv://kyleDev:gefxit-wazcy1-ciPbod@cluster0-kni2l.mongodb.net/test?retryWrites=true&w=majority'
-mongoose.connect(urlForLocal,
+mongoose.connect(urlForOnline,
     {
         useNewUrlParser:true,
         useCreateIndex:true,
@@ -45,14 +45,11 @@ app.get('/', function (req, res) {
     //res.sendFile(path.join(__dirname, '/build', 'index.html'));
 });
 
-/*
-app.get('/',(req,res)=>{
 
-    res.status(200).send('Covid 19 latest stats');
+app.get('/home',(req,res)=>{
+
+    res.redirect('/');
 });
-
-
- */
 
 app.listen(4000,()=>{
     console.log('Server Running on port 4000')
