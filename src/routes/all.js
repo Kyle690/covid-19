@@ -115,7 +115,7 @@ router.get('/test',async (req,res)=>{
     return res.status(200).send({status:1,data});
 })
 
-schedule.scheduleJob({hour:8,minute: 50},async()=>{
+schedule.scheduleJob({hour:23,minute: 45},async()=>{
     console.log('job scheduled');
     const {deaths,recoveries,confirmed} = await getData();
 
