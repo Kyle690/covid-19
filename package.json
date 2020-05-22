@@ -4,6 +4,7 @@
   "description": "Api to log and track the covid-19  cases in south africa",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
