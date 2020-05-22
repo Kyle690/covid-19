@@ -28,7 +28,7 @@ const Main = ({getData, data})=>{
             <div style={{marginTop:60}}>
                 <Switch>
                     <Route path={'/home'} component={Home}/>
-                    <Route path={'/add'} component={AddEntry}/>
+                    <Route path={'/addentry'} component={AddEntry}/>
                     <Route path={'/history'} component={History}/>
                     <Route path={'/graphs'} component={Graphs}/>
                     <Redirect from={'/'} to={'/home'}/>

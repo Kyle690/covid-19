@@ -1,4 +1,4 @@
-import axios from '../../Api/index';
+import axios from 'axios';
 import {LOAD_ENTRIES} from "../types";
 
 export const addData=(data,callback)=>async dispatch=>{

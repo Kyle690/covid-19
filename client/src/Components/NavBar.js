@@ -22,7 +22,7 @@ const NavBar =()=>{
             <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className={'ml-auto'} navbar onSelect={handleLink}>
                     <Nav.Link eventKey={'home'}>Home</Nav.Link>
-                    <Nav.Link eventKey={'add'}>Add</Nav.Link>
+                    <Nav.Link eventKey={'addentry'}>Add</Nav.Link>
                     <Nav.Link eventKey={'history'}>History</Nav.Link>
                     <Nav.Link eventKey={'graphs'}>Graphs</Nav.Link>
                 </Nav>

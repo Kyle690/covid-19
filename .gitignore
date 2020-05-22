@@ -1,4 +1,4 @@
 node_modules
 
-
-config
+config/urls.js
+config/dev.js

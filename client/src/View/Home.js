@@ -57,24 +57,27 @@ const Home =({data})=>{
                 <Col sm={3}>
                     <Card text={'danger'}>
                         <Card.Header>Deaths</Card.Header>
-                        <Card.Body>
+                        <Card.Body className={'d-flex direction-row justify-content-between align-items-center'}>
                             <h1>{deathsTotal}</h1>
+                            <h5>{((parseInt(deathsTotal)/parseInt(confirmedTotal))*100).toFixed(2)}%</h5>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col sm={3}>
                     <Card text={'warning'}>
                         <Card.Header>Recoveries</Card.Header>
-                        <Card.Body>
+                        <Card.Body className={'d-flex direction-row justify-content-between align-items-center'}>
                             <h1>{recoveriesTotal}</h1>
+                            <h5>{(parseInt(recoveriesTotal)/parseInt(confirmedTotal)*100).toFixed(2)}%</h5>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col sm={3}>
                     <Card text={'success'}>
                         <Card.Header>Active</Card.Header>
-                        <Card.Body>
+                        <Card.Body className={'d-flex direction-row justify-content-between align-items-center'}>
                             <h1>{activeTotal}</h1>
+                            <h5>{(parseInt(activeTotal)/parseInt(confirmedTotal)*100).toFixed(2)}%</h5>
                         </Card.Body>
                     </Card>
                 </Col>

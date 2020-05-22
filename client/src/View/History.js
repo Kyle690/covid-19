@@ -27,6 +27,7 @@ const History = ({data})=>{
                         <td>Daily Active</td>
                     </tr>
                     </thead>
+                    <tbody>
                     {data.reverse().map((entry,i)=>{
                         const {dayNo, timestamp,confirmed,difference,deaths,dailyDeaths,recoveries,dailyRecoveries,active,dailyActive,lockDownLevel}=entry;
                         return (
@@ -45,6 +46,7 @@ const History = ({data})=>{
                             </tr>
                         )
                     })}
+                    </tbody>
                 </Table>
             </Card.Body>
 
