@@ -56,7 +56,7 @@ const AddData=async()=>{
             confirmed,
             recoveries,
             ldLevel:level,
-            timestamp:Date.now()
+            timestamp:Date.now()-(60*60*4*1000)
         });
         await entry.save();
         console.log(new Date().toLocaleTimeString(),'Entry saved');
